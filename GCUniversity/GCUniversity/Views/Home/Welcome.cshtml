@@ -1,0 +1,19 @@
+﻿@model Students
+@{
+    ViewData["Title"] = "Welcome";
+}
+<h1>@ViewData["Message"]</h1>
+
+<div>
+    <p>Welcome to GCU WAAAASSSSSSSSSSUUUUPPPP!!!</p>
+    <p>To view available courses click here: </p>
+    <div>
+        @Html.ActionLink("ListOfCourses", "ListOfCourses", "Admin")
+        <a class="work" asp-area="" asp-controller="Admin" asp-action="ListOfCourses">ListOfCourses</a>
+    </div>
+    <p>To view available grades click here </p>
+    <div>
+        @Html.ActionLink("Grades", "Grades", "Students")
+        <a class="work" asp-area="" asp-controller="Students" asp-action="Grades">Grades</a>
+    </div>
+</div>

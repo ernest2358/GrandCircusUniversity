@@ -1,0 +1,14 @@
+﻿@model GCUniversity.Models.Enrollment
+
+<h1>Grades</h1>
+<!--Can I make this whole thing a veiw data or bag?
+    How do I show a list per user or even list in list thats currently not a collection, took out foreach due to build errors for rest of project testing-->
+<div>
+    <dl class="row">
+       {
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FinalGrade)
+            </dd>
+        }
+    </dl>
+</div>
